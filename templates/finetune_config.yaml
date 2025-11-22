@@ -1,0 +1,11 @@
+model_name: "BAAI/bge-base-en-v1.5"
+train_batch_size: 32
+gradient_accumulation_steps: 2
+epochs: 3
+learning_rate: 2e-5
+fp16: true
+max_seq_length: 128
+candidate_pool_k: 100
+hard_negative_m: 5
+val_interval_steps: 1000
+save_best_metric: "recall@10"
